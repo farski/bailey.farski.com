@@ -16,6 +16,7 @@
     <!-- <script src="/scripts/jquery.lazyload.min.js"></script> -->
 
     <link rel="stylesheet" href="/stylesheets/onepage-scroll.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <script>
       $(function() {
@@ -53,45 +54,69 @@
         padding: 0;
       }
 
-      article {
+      #main {
+        z-index: 1;
+      }
+
+      #main article {
         background: black;
       }
 
-      div {
+      #main div {
         height: 100%;
       }
 
-      img {
+      #main img {
         display: block;
         width: 100%;
       }
 
-      section {
+      #main section {
         background: black;
       }
 
-      section img {
+      #main section img {
         width: 33%;
         display: inline-block;
       }
 
-      section img.wide {
+      #main section img.wide {
         width: 66%;
       }
 
-      section img.square {
+      #main section img.square {
         width: 50%;
         margin: 0 auto;
         display: block;
       }
 
-      video {
+      #main video {
         pointer-events: none;
         height: 100%;
+      }
+
+      #extra {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+      }
+
+      #extra a {
+        display: inline-block;
+        color: black;
+        padding: 10px;
       }
     </style>
   </head>
   <body>
+    <div id="extra">
+      <a href="https://www.twitter.com/baileythebeagle"><i class="fa fa-twitter fa-2x"></i></a>
+      <a href="https://www.facebook.com/bailey.kalafarski"><i class="fa fa-facebook-official fa-2x"></i></a>
+      <a href="https://soundcloud.com/baileythebeagle"><i class="fa fa-soundcloud fa-2x"></i></a>
+      <a href="https://www.instagram.com/bailey.kalafarski/"><i class="fa fa-instagram fa-2x"></i></a>
+    </div>
+
     <div id="main">
       <article><div><img src="https://media-www.bailey.dog/images/full/0003.jpg"></div></article>
       <article><div><img src="https://media-www.bailey.dog/images/full/0001.jpg"></div></article>
