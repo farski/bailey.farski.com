@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: #000;
+}
+
+#external {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#external a {
+  display: block;
+}
+
+#external a img {
+  display: block;
+  width: 60px;
+  height: auto;
+}
+
+#external a img[src="twitter.svg"] {}
+#external a img[src="icons/instagram.svg"] { width: 40px; padding: 10px; }
+#external a img[src="icons/facebook.svg"] { width: 40px; padding: 10px; }
+#external a img[src="icons/podcast.svg"] { width: 40px; padding: 10px; }
+
+picture,
+video {
+  display: block;
+  opacity: 0.1;
+  transition: opacity 500ms ease-out;
+}
+
+picture.spotlight,
+video.spotlight {
+  opacity: 1;
+}
+
+picture img {
+  display: block;
+  width: 100vw;
+  height: auto;
+  max-width: 100vw;
+  padding-bottom: 66.66667%;
+}
+
+picture.square img {
+  width: auto;
+  max-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 100%;
+}
+
+picture img.loaded { padding: 0; }
+
+video {
+  width: 100vw;
+  height: auto;
+}
