@@ -16,7 +16,7 @@
       }
     }
 
-    if (document.body.scrollTop <= 0) {
+    if (window.scrollY <= 0) {
       document.querySelector('.spotlight').classList.remove('spotlight');
       multimedia[0].classList.add('spotlight');
     }
