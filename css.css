@@ -5,26 +5,47 @@ body {
   background: #000;
 }
 
-#external {
+h2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  opacity: 1;
+  font-family: system-ui;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 10px;
+  color: #939393;
+  mix-blend-mode: luminosity;
+}
+
+nav {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 99;
+  opacity: 1;
 }
 
-#external a {
+nav a {
   display: block;
 }
 
-#external a img {
+nav a img {
   display: block;
   width: 60px;
   height: auto;
+  transition: filter 220ms ease-out;
 }
 
-#external a img[src="twitter.svg"] {}
-#external a img[src="icons/instagram.svg"] { width: 40px; padding: 10px; }
-#external a img[src="icons/facebook.svg"] { width: 40px; padding: 10px; }
-#external a img[src="icons/podcast.svg"] { width: 40px; padding: 10px; }
+nav a:hover img { filter: invert(98%) sepia(98%) saturate(0%) hue-rotate(330deg) brightness(102%) contrast(104%); }
+
+nav a img[src="twitter.svg"] {}
+nav a img[src="icons/instagram.svg"] { width: 40px; padding: 10px; }
+nav a img[src="icons/facebook.svg"] { width: 40px; padding: 10px; }
+nav a img[src="icons/apple-podcast.svg"] { width: 40px; padding: 10px; }
+nav a img[src="icons/rss.svg"] { width: 34px; padding: 12px; }
 
 picture,
 video {
